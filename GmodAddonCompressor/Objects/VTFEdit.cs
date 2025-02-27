@@ -306,13 +306,13 @@ namespace GmodAddonCompressor.Objects
                     {
                         try
                         {
-                            var size = new MagickGeometry(newWidth, newHeight);
+                            var size = new MagickGeometry((uint)newWidth, (uint)newHeight);
                             size.IgnoreAspectRatio = false;
 
                             image.Resize(size);
 
-                            imageWidth = image.Width;
-                            imageHeight = image.Height;
+                            imageWidth = (int)image.Width;
+                            imageHeight = (int)image.Height;
                         }
                         catch (Exception ex)
                         {

@@ -273,7 +273,7 @@ namespace GmodAddonCompressor.Bases
             {
                 try
                 {
-                    var size = new MagickGeometry(resizeWidth, resizeHeight);
+                    var size = new MagickGeometry((uint)resizeWidth, (uint)resizeHeight);
                     size.IgnoreAspectRatio = isSingleColor ? true : !ImageContext.KeepImageAspectRatio;
 
                     image.Resize(size);
