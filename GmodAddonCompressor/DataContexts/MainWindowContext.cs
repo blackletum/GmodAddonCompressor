@@ -31,8 +31,12 @@ namespace GmodAddonCompressor.DataContexts
         private int _imageReducingResolutionListIndex = 0;
         private int _imageWidthLimitIndex = 10;
         private int _imageHeightLimitIndex = 10;
+		//Testing a new value, 0, so that I can run the utility without actually compressing images.
+		//This will make it so that I can use the utility to easily change VTF versions to a 
+		//version that HL2 can use without having to do it manually per VTF.
         private int[] _imageReducingResolutionList = new int[]
         {
+			0,
             2,
             4,
             6,
