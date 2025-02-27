@@ -141,7 +141,7 @@
         </Grid>
 
         <Grid Grid.Column="2" Grid.Row="0" Margin="5, 10, 5, 10">
-            <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" Margin="0,0,0,-43">
                 <StackPanel Orientation="Horizontal">
                     <CheckBox
                         Style="{StaticResource DarkCheckBox}"
@@ -168,11 +168,16 @@
                 <StackPanel Orientation="Vertical" Visibility="{Binding Path=ReduceExactlyToResolution, Converter={StaticResource VisibleIfTrueConverter}}">
                     <Label
                         Style="{StaticResource DarkLabel}"
-                        Margin="0, 5, 0, 5"
+                        Margin="0, 0, 0, 0"
                         HorizontalAlignment="Left"
                         Content="Reducing resolution (2x, 4x, etc.)" 
                         Width="188"/>
-
+                    <Label
+                        Style="{StaticResource DarkLabel}"
+                        Margin="0, 0, 0, 0"
+                        HorizontalAlignment="Left"
+                        Content="Set to 0 for no compression." 
+                        Width="188"/>
                     <ComboBox
                         Margin="0, 5, 0, 15"
                         HorizontalAlignment="Left"
@@ -293,7 +298,7 @@
         </Grid>
 
         <Grid Grid.Column="3" Grid.Row="1">
-            <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" Margin="0,-21,0,0">
                 <TextBlock 
                     x:Name="VersionId"
                     Style="{StaticResource DarkTextBlock}"
@@ -303,7 +308,12 @@
 
                 <TextBlock 
                     Style="{StaticResource DarkTextBlock}"
-                    Text="Author: Shark_vil" 
+                    Text="Original author: Shark_viltest"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"/>
+                <TextBlock 
+                    Style="{StaticResource DarkTextBlock}"
+                    Text="Edited by: blackletum"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"/>
             </StackPanel>
